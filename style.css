@@ -1,0 +1,106 @@
+.body {
+  background-color: black;
+}
+
+/*---------------------------------------------------*/
+/*	 HOME
+/*---------------------------------------------------*/
+
+.tokyo_tm_home {
+  width: 100%;
+  min-height: 100vh;
+  clear: both;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.tokyo_tm_home .home_content {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.tokyo_tm_home .avatar {
+  min-width: 300px;
+  min-height: 300px;
+  position: relative;
+  border-radius: 100%;
+}
+.tokyo_tm_home .avatar .image {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  animation: morph 8s ease-in-out infinite 1s;
+  background-blend-mode: multiply;
+  -webkit-box-shadow: inset 0px 0px 0px 9px rgba(255, 255, 255, 0.3);
+  -moz-box-shadow: inset 0px 0px 0px 9px rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0px 0px 0px 9px rgba(255, 255, 255, 0.3);
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+}
+
+.tokyo_tm_home .details {
+  margin-left: 80px;
+}
+.tokyo_tm_home .details .name {
+  font-size: 55px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  color: white;
+}
+.tokyo_tm_home .details .job {
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 500;
+  max-width: 450px;
+  margin-bottom: 30px;
+  color: rgba(16, 233, 16, 0.945);
+}
+.tokyo_tm_home .social {
+  width: 100%;
+  float: left;
+}
+.tokyo_tm_home .social ul {
+  margin: 0px;
+  list-style-type: none;
+}
+.tokyo_tm_home .social ul li {
+  margin: 0px 12px 0px 0px;
+  display: inline-block;
+}
+.tokyo_tm_home .social ul li:last-child {
+  margin-right: 0px;
+}
+.tokyo_tm_home .social ul li a {
+  text-decoration: none;
+  color: #000;
+
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.tokyo_tm_home .social ul li a:hover {
+  color: #000;
+}
+.tokyo_tm_home .social ul li .svg {
+  width: 17px;
+  height: 17px;
+}
